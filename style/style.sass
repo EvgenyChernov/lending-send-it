@@ -225,6 +225,12 @@ body
         &__content-item-one 
             display: grid
             grid-gap: 9px
+            &_form
+                display: grid
+                grid-template-rows: auto 
+                align-self: center
+                justify-self: center
+                grid-gap: 9px
         &__content-h3 
             font-size: 28px
             line-height: 28px
@@ -252,6 +258,7 @@ body
             color: #FFFFFF
             padding: 15px 24px
             background: #008DCD
+            width: 280px
             &::placeholder
                 color: #FFFFFF
 
@@ -297,6 +304,8 @@ body
         &__box 
             display: grid
             grid-gap: 13px
+        &__box-2
+            display: none
         &__box-top 
             display: grid
             grid-template-columns: 1fr 1fr
@@ -304,9 +313,11 @@ body
         &__box-top-img
             width: 100px
             height: 100px
+        &__box-top-img_1
             background-image: url(../img/reviews/darya-small-1.jpg)
+        
 
-        &__box-top-text 
+        &__box-top-text
             display: grid
             grid-gap: 4px
         &__box-top-h3 
@@ -784,8 +795,12 @@ body
             display: grid
             grid-gap: 9px
             &_form
+                display: grid
+                grid-template-rows: auto 
                 align-self: center
                 justify-self: right
+                grid-gap: 9px
+                
         &__content-h3 
             font-size: 28px
             line-height: 28px
@@ -1054,6 +1069,11 @@ body
 
         &__form-list-link 
             height: min-content
+            &_big
+                display: none
+        &__form-list-link-img
+            width: 66px
+            height: 41px
             
     .button-left_partners
     .button-right_partners
@@ -1186,9 +1206,648 @@ body
         &__link-img
             height: 12px
             width: 12px
+
 @media (min-width: 1440px) 
 
     section,
     header,
     footer 
-        padding: 0 calc(50vw - 683px)
+        padding: 0 calc(50vw - 720px)
+    .header 
+        display: flex
+        background-image: url(../img/background/background-mine-big.jpg)
+        background-size: auto 100%
+        background-position: center
+        background-repeat: no-repeat
+        height: 525px
+        width: 100%
+        &__content 
+            display: grid
+            height: min-content
+            width: 100%
+            
+            padding: 29px 140px
+        &__top-left 
+            width: 100%
+            display: grid
+            grid-template-columns: 160px auto
+            height: min-content
+        &__h3
+            padding-top: 88px
+            max-width: 750px
+            font-size: 48px
+            line-height: 58px
+            color: #FFFFFF
+            font-weight: 700
+        &__h4 
+            padding-top: 22px
+            padding-bottom: 35px
+            font-size: 28px
+            line-height: 34px
+            color: #FFFFFF
+            font-weight: 600
+        &__center 
+            display: 
+
+    .logo 
+        display: grid
+        width: 160px
+        height: 46px
+        background-size: 100%
+        background-repeat: no-repeat
+        &__header
+
+        &_white
+            background-image: url(../img/paraphernalia/logo-header.svg)
+            
+    .menu
+        padding-left: 140px
+        display: grid
+        grid-template-columns: repeat(6, auto)
+        justify-content: space-between
+        &__li  
+            display: grid
+            height: 100%
+        // grid-gap: 32px
+
+        &__link
+            display: grid
+            align-self: center   
+            font-size: 18px
+            line-height: 22px
+            color: #FFFFFF
+
+    .button-gamburger
+        display: none
+        width: 40px
+        height: 29px
+        background-size: 100%
+        background-repeat: no-repeat
+        &_white
+            background-image: url(../img/paraphernalia/hamburger-white.svg)
+    .button-type-1 
+        max-width: 360px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 17px 30px
+        width: 100%
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        text-transform: uppercase
+        font-weight: 700
+    ////////////////////////// think-of-sending //////////////////////////
+    .think-of-sending
+        display: none
+        &__content
+            padding: 21px
+        &__h3 
+            font-size: 32px
+            line-height: 38px
+            color: #000000
+            font-weight: 700
+        &__h4 
+            padding: 8px 0
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            font-weight: 700
+
+    //////////////////////// delivery-aggregator //////////////////////////
+    .delivery-aggregator 
+        background: #F7F7F7
+        &__content 
+            display: grid
+            grid-template-columns: 438px 
+            justify-content: end
+            grid-gap: 15px
+            padding: 90px 112px 104px 112px
+            width: 100%
+            position: relative
+        &__content-img
+            display: grid
+            width: 660px
+            height: 336px
+            background-size: 100%
+            background-image: url(../img/icon/group.svg)
+            position: absolute
+            bottom: 59px
+            left: 111px
+
+
+        &__content-h4
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+        &__content-p
+            max-width: 438px
+            padding-top: 10px
+            padding-bottom: 12px
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+    //////////////////////// step-box //////////////////////////
+
+    .step-box
+        &__content
+            padding: 69px 182px 56px 198px
+            display: grid
+            grid-template-columns: 462px 462px
+            justify-content: space-between
+
+        &__figure 
+            display: grid
+            width: 100%
+            padding: 27px 21px
+        &__figure-img
+            width: 462px
+            height: 312px
+        &__figure-h3 
+            padding-top: 22px
+            width: 100%
+            font-size: 30px
+            line-height: 36px
+            color: #000000
+            font-weight: 700
+
+        &__figure-p 
+            padding-top: 7px
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+            width: 100%
+  
+    //////////////////////// self-care ////////////////////////
+    .self-care 
+        background: #F7F7F7
+        &__content
+            padding: 72px 140px 64px 140px
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+        &__box-one 
+            min-width: 711px
+            height: 100%
+        &__h3 
+            align-self: center
+            height: 100%
+            font-size: 36px
+            line-height: 53px
+            color: #000000
+            font-weight: 700
+        &__box-two 
+            display: grid
+            align-self: center
+            justify-self: right
+            min-width: 360px
+            
+    //////////////////////// feedback ////////////////////////
+    .feedback 
+        background: #008DCD
+        &__content 
+            padding: 73px 140px 39px 140px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 12px
+            align-content: start
+        &__content-item-one 
+            display: grid
+            grid-gap: 9px
+            grid-template-rows: 58px 24px
+            &_form
+                grid-gap: 9px
+                display: grid
+                align-self: center
+                justify-self: right
+        &__content-h3 
+            font-size: 48px
+            line-height: 58px
+            text-transform: uppercase
+            color: #FFFFFF
+            font-weight: 700
+            min-width: 735px
+            
+
+        &__content-p 
+            
+            font-size: 24px
+            line-height: 23px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            max-width: 753px
+
+        &__content-item-one-input-phone
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 16px
+            line-height: 19px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            padding: 15px 24px
+            background: #008DCD
+            min-width: 360px
+            &::placeholder
+                color: #FFFFFF
+
+        &__content-item-one-label-for-checkbox
+            font-size: 10px
+            line-height: 15px
+            color: #FFFFFF
+            display: flex
+            align-items: center
+            font-weight: 300
+            
+        &__content-item-one-checkbox
+            display: flex
+            margin-left: 8px
+            margin-right: 8px
+
+    .button-type-2 
+        background: #FFCC00
+        border-radius: 30px
+        font-size: 16px
+        line-height: 18px
+        text-transform: uppercase
+        color: #363636
+        padding: 14px 35px 
+        text-align: center
+        font-weight: 700
+        min-width: 360px
+
+    //////////////////////// reviews ////////////////////////
+    .reviews 
+
+        &__content 
+            padding: 69px 141px 57px 142px
+        &__h3
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 45px
+        &__lining
+            display: grid
+            grid-template-columns: 22px auto 22px
+        &__list
+            display: grid
+            grid-template-columns: 440px 440px
+            justify-content: center
+            grid-gap: 40px
+            
+        &__box 
+            display: grid
+            grid-gap: 30px
+        &__box-top 
+            display: grid
+            grid-template-columns: 160px 1fr
+            grid-gap: 40px
+        &__box-top-img
+            width: 160px
+            height: 159px
+            &_1
+                background-image: url(../img/reviews/darya-big-1.jpg)
+            &_2
+                background-image: url(../img/reviews/elena-big-1.jpg)
+
+        &__box-top-text 
+            display: grid
+            grid-gap: 4px
+        &__box-top-h3 
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 500
+
+        &__box-top-h4 
+            font-size: 24px
+            line-height: 24px
+            display: flex
+            align-items: center
+            color: #000000
+            font-weight: 500
+            padding-bottom: 4px
+        &__box-top-h5 
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+        &__box-bottom 
+
+        &__box-bottom-p 
+            font-size: 16px
+            line-height: 14px
+            color: #000000
+            min-height: 84px
+            
+        
+    .button-right,
+    .button-left 
+        display: grid
+        align-content: center
+    .button-right_reviews,
+    .button-left_reviews
+        align-content: start
+        padding-top: 70px
+    //////////////////////// advantages ////////////////////////
+
+    .advantages 
+        background: #F7F7F7
+        &__content 
+            padding: 101px 140px
+        &__h3 
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+        &__list
+            display: grid
+            grid-template-columns: repeat(6,160px)
+            justify-content: space-between
+            
+            padding-top: 24px
+            padding-bottom: 12px
+
+        &__link 
+            width: 160px
+            display: grid
+            justify-content: center
+            grid-template-columns: 160px
+        &__link-img
+            width: 160px
+            height: 160px
+        &__link-p
+            
+            padding-top: 25px
+            display: grid
+            justify-content: center 
+            text-align: center
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+
+    //////////////////////// warranty ////////////////////////
+
+    .warranty 
+
+        &__content 
+            padding: 80px 140px 64px 140px
+        &__h3 
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 16px
+        &__form 
+            display: grid
+            grid-template-columns: 360px 360px 360px
+            justify-content: space-between
+            
+        &__form-item 
+            display: grid
+            grid-template-columns: 360px
+            grid-gap: 13px
+            &_secondary
+
+        &__form-item-top 
+            display: grid
+            grid-gap: 10px
+        &__form-item-top-img 
+            height: 160px
+        &__form-item-top-h3 
+            white-space: nowrap
+            display: grid
+            align-content: center
+            font-size: 30px
+            line-height: 36px
+            color: #000000
+            font-weight: 700
+        &__form-item-bottom 
+            display: grid
+            grid-gap: 10px
+        &__form-item-bottom-p 
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            min-height: 125px
+
+    .button-right_warranty, 
+    .button-left_warranty
+        display: none
+        align-content: start
+        padding-top: 21px
+
+    //////////////////////// doubt //////////////////////// 
+
+    .doubt 
+        background: #D2ECF7
+        &__content 
+            padding: 64px 155px 59px 140px
+        &__h2 
+            font-size: 36px
+            line-height: 43px
+            font-weight: 700
+            color: #000000
+            padding-bottom: 24px
+        &__list 
+            display: grid
+            grid-template-columns: 558px 558px
+            grid-gap: 16px 29px 
+        &__link 
+            display: grid
+            grid-template-columns: 1fr 25px
+            background: #FFFFFF
+            border-radius: 32px
+            padding: 16px 24px
+            color: #000000
+            min-height: 64px
+            &_left-1
+                order: 0
+            &_left-2
+                order: 3
+            &_left-3
+                order: 5
+            &_right-1 
+                order: 0
+            &_right-2
+                order: 4
+            &_right-3
+                order: 6
+            
+        &__link-p 
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+
+        &__link-img 
+            display: grid
+            justify-self: center
+            align-self: center
+            width: 100%
+
+    //////////////////////// partners ////////////////////////
+
+    .partners
+
+        &__content 
+            padding: 59px 141px 50px 142px
+
+        &__form 
+            display: grid
+            grid-template-columns: 22px auto 22px
+
+        &__form-list
+            padding-left: 69px
+            padding-right: 69px
+            display: grid
+            grid-template-columns: 94px 94px 94px 94px 94px 94px 94px 94px 
+            justify-content: space-between
+            grid-template: auto
+
+        &__form-list-link 
+            width: min-content
+        &__form-list-link-img
+            width: 94px
+            height: 60px
+            
+    .button-left_partners
+    .button-right_partners
+        padding-bottom: 
+    //////////////////////// footer ////////////////////////
+    .footer 
+        background: #E9E9E9
+        
+        &__content 
+            padding: 31px 147px 24px 147px
+            display: grid
+        &__content-top 
+            
+            display: grid
+            grid-template-columns: 304px auto
+            
+            border-bottom: 1px solid #C4C4C4
+            padding-bottom: 13px
+        &__content-top-h3 
+            
+            font-size: 30px
+            line-height: 36px
+            color: #000000
+            font-weight: 600
+            align-self: start
+
+        &__content-top-form 
+            display: grid
+            grid-template-columns: 362px 362px
+            justify-content: end
+            grid-column-gap: 20px
+            grid-row-gap: 8px
+         
+
+        &__content-top-form-input-phone
+            border: 1px solid #363636
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 14px
+            line-height: 17px
+            padding: 14px 23px
+            color: #363636
+            background: #E9E9E9
+            min-width: 362px
+            &::placeholder
+                color: #363636
+        &__content-top-form-label-for-checkbox
+            display: flex
+            align-items: center
+            font-size: 10px
+            line-height: 12px
+            color: #9E9E9E
+            white-space: nowrap
+        &__content-top-form-checkbox 
+            margin-left: 5px
+            margin-right: 5px
+        &__content-center 
+            padding: 19px 0 30px 0
+            display: grid
+            grid-template-columns: 160px auto
+            border-bottom: 1px solid #C4C4C4
+        &__content-bottom 
+            display: grid
+            grid-template-columns: 200px 25px  700px  100px
+            justify-content: space-between
+            padding: 18px 0
+        &__content-bottom-copyright
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            order: -2
+            
+        &__content-bottom-years
+            width: min-content
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            order: -1
+
+        &__content-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            justify-self: end
+
+    .button-type-3
+        display: grid
+        width: 100%
+        max-width: 362px
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 14px 31px
+        justify-self: center
+        text-align: center
+        font-weight: 700
+    .menu__footer
+        padding-left: 40px
+    .menu__link_footer
+        display: grid
+        align-content: center
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+    .menu__footer-li
+        display: grid
+        height: 100%
+    .logo-footer
+        display: flex
+        width: 160px
+        height: 47.8px
+        background-size: 100%
+        background-position: center
+        &_black
+            background-image: url(../img/paraphernalia/logo-footer.svg)
+
+    .button-gamburger 
+        width: 40px
+        height: 33px
+        &_black
+            align-self: center 
+            background-image: url(../img/paraphernalia/hamburger-black.svg)
+    .social-box 
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 16px
+        justify-self: center
+        justify-self: start
+        padding-left: 260px
+        &__link 
+            
+        &__link-img
+            height: 19px
+            width: 19px
