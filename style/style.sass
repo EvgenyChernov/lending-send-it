@@ -1,0 +1,1194 @@
+@import variables
+@import mixins
+@import font-style
+
+////////////////// обнуление стилей //////////////////
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+*, *:before, *:after
+    box-sizing: border-box
+
+a:focus, a:active
+    outline: none
+
+a:focus, a:active
+    outline: none
+
+nav, footer, header, aside
+    display: block
+
+html,body
+    height: 100%
+    width: 100%
+    font-size: 100%
+    line-height: 1
+    font-size: 14px
+    -ms-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+input,button,textarea
+    font-family: inherit
+
+input::-ms-clear
+    display: none
+
+button
+    cursor: pointer
+
+button::-moz-focus-inner
+    padding: 0
+    border: 0
+
+a, a:visited, a:hover
+    text-decoration: none
+
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+    font-size: inherit
+    font-weight: 400
+
+
+////////////////// общие стили //////////////////
+
+.wraper
+    display: grid
+    grid-template-rows: 100px auto 50px
+    min-height: 100vh
+    
+body
+    font-family: 'MyriadPro'
+ 
+@media  (max-width: 766px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 160px)
+
+    .header 
+        display: flex
+        background-image: url(../img/background/background-mine-big.jpg)
+        background-size: auto 100%
+        background-position: 87%, center
+        height: 288px
+        &__content 
+            display: flex
+            width: 100%
+            padding: 27px 20px
+
+        &__top-left 
+            width: 100%
+            display: flex
+            justify-content: space-between
+        &__h3 
+
+        &__h4 
+        
+        &__center 
+            display: none
+
+    .logo 
+        display: flex
+        width: 100px
+        height: 28px
+        background-size: 100%
+        background-repeat: no-repeat
+        &__header
+
+        &_white
+            background-image: url(../img/paraphernalia/logo-header.svg)
+            
+    .menu 
+        display: none
+
+        &__link     
+
+    .button-gamburger
+        display: flex
+        width: 40px
+        height: 29px
+        background-size: 100%
+        background-repeat: no-repeat
+        &_white
+            background-image: url(../img/paraphernalia/hamburger-white.svg)
+    .button-type-1 
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding: 17px 30px
+        width: 100%
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        text-transform: uppercase
+        font-weight: 700
+    ////////////////////////// think-of-sending //////////////////////////
+    .think-of-sending
+        &__content
+            padding: 21px
+        &__h3 
+            font-size: 32px
+            line-height: 38px
+            color: #000000
+            font-weight: 700
+        &__h4 
+            padding: 8px 0
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            font-weight: 700
+
+    //////////////////////// delivery-aggregator //////////////////////////
+    .delivery-aggregator 
+        background: #F7F7F7
+        &__content 
+            display: flex
+            flex-direction: column
+            padding: 17px 21px
+            width: 100%
+        &__content-img
+            display: flex
+            width: 278px
+            height: 141.53px
+            background-size: 100%
+            background-image: url(../img/icon/group.svg)
+        &__content-h4
+            padding-top: 25px
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+        &__content-p
+            padding-top: 10px
+            padding-bottom: 12px
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+    //////////////////////// step-box //////////////////////////
+
+    .step-box
+        &__figure 
+            display: grid
+            width: 100%
+            padding: 27px 21px
+        &__figure-img
+
+        &__figure-h3 
+            padding-top: 22px
+            width: 100%
+            font-size: 26px
+            line-height: 26px
+            color: #000000
+            font-weight: 700
+
+        &__figure-p 
+            padding-top: 7px
+            font-size: 14px
+            line-height: 14px
+            color: #000000
+            width: 100%
+  
+    //////////////////////// self-care ////////////////////////
+    .self-care 
+        background: #F7F7F7
+        &__content
+            padding: 23px 21px
+            display: grid
+
+        &__box-one 
+
+        &__h3 
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            padding-bottom: 10px
+            font-weight: 700
+        &__box-two 
+            max-width: 278px
+
+    //////////////////////// feedback ////////////////////////
+    .feedback 
+        background: #008DCD
+        &__content 
+            padding: 32px 21px 7px 21px
+            display: grid
+        &__content-item-one 
+            display: grid
+            grid-gap: 9px
+        &__content-h3 
+            font-size: 28px
+            line-height: 28px
+            text-transform: uppercase
+            color: #FFFFFF
+            font-weight: 700
+
+        &__content-p 
+            padding-top: 12px
+            padding-bottom: 14px
+            font-size: 14px
+            line-height: 13px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+
+        &__content-item-one-input-phone
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 16px
+            line-height: 19px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            padding: 15px 24px
+            background: #008DCD
+            &::placeholder
+                color: #FFFFFF
+
+        &__content-item-one-label-for-checkbox
+            font-size: 10px
+            line-height: 15px
+            color: #FFFFFF
+            display: flex
+            align-items: center
+            font-weight: 300
+            
+        &__content-item-one-checkbox
+            display: flex
+            margin-left: 8px
+            margin-right: 8px
+
+    .button-type-2 
+        background: #FFCC00
+        border-radius: 30px
+        font-size: 16px
+        line-height: 18px
+        text-transform: uppercase
+        color: #363636
+        padding: 14px 35px 
+        text-align: right
+        font-weight: 700
+
+    //////////////////////// reviews ////////////////////////
+    .reviews 
+
+        &__content 
+            padding: 21px
+        &__h3
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 8px
+        &__lining
+            display: grid
+            grid-template-columns: 22px 230px 22px
+    
+        &__box 
+            display: grid
+            grid-gap: 13px
+        &__box-top 
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 13px
+        &__box-top-img
+            width: 100px
+            height: 100px
+            background-image: url(../img/reviews/darya-small-1.jpg)
+
+        &__box-top-text 
+            display: grid
+            grid-gap: 4px
+        &__box-top-h3 
+            font-size: 26px
+            line-height: 19px
+            color: #000000
+            font-weight: 500
+
+        &__box-top-h4 
+            font-size: 18px
+            line-height: 22px
+            display: flex
+            align-items: center
+            color: #000000
+            font-weight: 500
+            padding-bottom: 4px
+        &__box-top-h5 
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+        &__box-bottom 
+
+        &__box-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            min-height: 84px
+        
+    .button-right,
+    .button-left 
+        display: grid
+        align-content: center
+    .button-right
+        justify-content: end
+
+    //////////////////////// reviews ////////////////////////
+
+    .advantages 
+        background: #F7F7F7
+        &__content 
+            padding: 23px 19px
+        &__h3 
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            font-weight: 700
+        &__list
+            display: grid
+            grid-template-columns: 86px 86px 86px 
+            grid-gap: 10px
+            padding-top: 12px
+            padding-bottom: 12px
+
+        &__link 
+            display: grid
+            justify-content: center
+            grid-template-columns: 86px
+        &__link-p
+            padding-left: 9px
+            padding-right: 9px
+            padding-top: 13px
+            display: grid
+            justify-content: center 
+            text-align: center
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+
+    //////////////////////// warranty ////////////////////////
+
+    .warranty 
+
+        &__content 
+            padding: 27px 21px
+        &__h3 
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 16px
+        &__form 
+            display: grid
+            grid-template-columns: 22px 230px 22px
+        &__form-item 
+            display: grid
+            grid-gap: 13px
+            &_secondary
+                display: none
+        &__form-item-top 
+            display: grid
+            grid-template-columns: 62px 1fr
+            grid-gap: 10px
+        &__form-item-top-img 
+
+        &__form-item-top-h3 
+            display: grid
+            align-content: center
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            font-weight: 700
+        &__form-item-bottom 
+            display: grid
+            grid-gap: 7px
+        &__form-item-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+
+    .button-right_warranty, 
+    .button-left_warranty
+        align-content: start
+        padding-top: 21px
+
+    //////////////////////// doubt //////////////////////// 
+
+    .doubt 
+        background: #D2ECF7
+        &__content 
+            padding: 25px 21px
+        &__h2 
+            font-size: 28px
+            line-height: 34px
+            font-weight: 700
+            color: #000000
+            padding-bottom: 10px
+
+        &__list 
+            display: grid
+            grid-gap: 10px
+
+        &__link 
+            display: grid
+            grid-template-columns: 1fr 25px
+            background: #FFFFFF
+            border-radius: 32px
+            padding: 16px 24px
+            color: #000000
+    
+        &__link-p 
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+
+        &__link-img 
+            display: grid
+            justify-self: center
+            align-self: center
+            width: 100%
+
+    //////////////////////// partners ////////////////////////
+
+    .partners
+
+        &__content 
+            padding: 17px 21px
+
+        &__form 
+            display: grid
+            grid-template-columns: 22px 230px 22px
+
+        &__form-list
+            display: grid
+            grid-template-columns: 66px 66px 66px
+            grid-gap: 0 7%
+            grid-template: auto
+        &__form-list-link 
+            height: min-content
+            
+    .button-left_partners
+    .button-right_partners
+        padding-bottom: 
+    //////////////////////// footer ////////////////////////
+    .footer 
+        background: #E9E9E9
+
+        &__content 
+            padding: 12px 15px
+
+        &__content-top 
+            display: grid
+            border-bottom: 1px solid #C4C4C4
+            padding-bottom: 13px
+        &__content-top-h3 
+            padding: 8px 0 11px 0
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+            font-weight: 600
+
+        &__content-top-form 
+            display: grid
+            grid-gap: 10px
+        &__content-top-form-input-phone
+            border: 1px solid #363636
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 14px
+            line-height: 17px
+            padding: 14px 23px
+            color: #363636
+            background: #E9E9E9
+            &::placeholder
+                color: #363636
+        &__content-top-form-label-for-checkbox
+            display: flex
+            align-items: center
+            font-size: 10px
+            line-height: 12px
+            color: #9E9E9E
+        &__content-top-form-checkbox 
+            margin-left: 5px
+            margin-right: 5px
+        &__content-center 
+            padding: 12px 0 17px 0
+            display: grid
+            grid-template-columns: 1fr 40px
+            border-bottom: 1px solid #C4C4C4
+        &__content-bottom 
+            display: grid
+            grid-template-columns: auto auto auto
+            justify-content: space-between
+            padding: 18px 0
+        &__content-bottom-copyright
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+            
+        &__content-bottom-years
+            width: min-content
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+
+        &__content-bottom-p 
+
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+
+    .button-type-3
+        display: grid
+        width: 100%
+        max-width: 289px 
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 14px 31px
+        justify-self: center
+        text-align: center
+        font-weight: 700
+
+    .logo-footer
+        display: flex
+        width: 140px
+        height: 57px
+        &_black
+            background-image: url(../img/paraphernalia/logo-footer.svg)
+
+    .button-gamburger 
+        width: 40px
+        height: 33px
+        &_black
+            align-self: center 
+            background-image: url(../img/paraphernalia/hamburger-black.svg)
+    .social-box 
+        display: none
+    .social-box__link 
+     
+
+@media (min-width: 768px) and (max-width: 1440px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 384px)
+
+    .header 
+        display: flex
+        background-image: url(../img/background/background-mine-big.jpg)
+        background-size: auto 100%
+        background-position: center
+        background-repeat: no-repeat
+        height: 415px
+        width: 100vw
+        &__content 
+            display: grid
+            width: 100%
+            height: 100%
+            padding: 29px 34px
+        &__top-left 
+            width: 100%
+            display: grid
+            grid-template-columns: 100px auto
+            height: min-content
+        &__h3
+            padding-top: 50px
+            max-width: 400px
+            font-size: 44px
+            line-height: 53px
+            color: #FFFFFF
+            font-weight: 700
+        &__h4 
+            padding-top: 25px
+            padding-bottom: 36px
+            font-size: 28px
+            line-height: 34px
+            color: #FFFFFF
+        &__center 
+            display: 
+
+    .logo 
+        display: grid
+        width: 100px
+        height: 28px
+        background-size: 100%
+        background-repeat: no-repeat
+        &__header
+
+        &_white
+            background-image: url(../img/paraphernalia/logo-header.svg)
+            
+    .menu
+        padding-left: 20px
+        display: grid
+        grid-template-columns: repeat(6, auto)
+        justify-content: space-between
+        &__li  
+            display: grid
+            height: 100%
+        // grid-gap: 32px
+
+        &__link
+            display: grid
+            align-self: center   
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+
+    .button-gamburger
+        display: none
+        width: 40px
+        height: 29px
+        background-size: 100%
+        background-repeat: no-repeat
+        &_white
+            background-image: url(../img/paraphernalia/hamburger-white.svg)
+    .button-type-1 
+        max-width: 280px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding: 17px 30px
+        width: 100%
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        text-transform: uppercase
+        font-weight: 700
+    ////////////////////////// think-of-sending //////////////////////////
+    .think-of-sending
+        display: none
+        &__content
+            padding: 21px
+        &__h3 
+            font-size: 32px
+            line-height: 38px
+            color: #000000
+            font-weight: 700
+        &__h4 
+            padding: 8px 0
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            font-weight: 700
+
+    //////////////////////// delivery-aggregator //////////////////////////
+    .delivery-aggregator 
+        background: #F7F7F7
+        &__content 
+            display: grid
+            grid-gap: 15px
+            padding: 25px 34px 51px 34px
+            width: 100%
+            position: relative
+        &__content-img
+            display: grid
+            width: 398px
+            height: 202.62px
+            background-size: 100%
+            background-image: url(../img/icon/group.svg)
+            position: absolute
+            bottom: 38px
+            right: 34px
+
+
+        &__content-h4
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+        &__content-p
+            max-width: 280px
+            padding-top: 10px
+            padding-bottom: 12px
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+    //////////////////////// step-box //////////////////////////
+
+    .step-box
+        &__content
+            padding: 78px 53px 56px 74px
+            display: grid
+            grid-template-columns: 280px 280px
+            justify-content: space-between
+
+        &__figure 
+            display: grid
+            width: 100%
+            padding: 27px 21px
+        &__figure-img
+
+        &__figure-h3 
+            padding-top: 22px
+            width: 100%
+            font-size: 26px
+            line-height: 26px
+            color: #000000
+            font-weight: 700
+
+        &__figure-p 
+            padding-top: 7px
+            font-size: 14px
+            line-height: 14px
+            color: #000000
+            width: 100%
+  
+    //////////////////////// self-care ////////////////////////
+    .self-care 
+        background: #F7F7F7
+        &__content
+            padding: 23px 21px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            
+
+        &__box-one 
+
+        &__h3 
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            padding-bottom: 10px
+            font-weight: 700
+        &__box-two 
+            display: grid
+            align-self: center
+            justify-self: right
+            max-width: 278px
+            
+    //////////////////////// feedback ////////////////////////
+    .feedback 
+        background: #008DCD
+        &__content 
+            padding: 32px 21px 7px 21px
+            display: grid
+            grid-template-columns: 1fr 1fr
+        &__content-item-one 
+            display: grid
+            grid-gap: 9px
+            &_form
+                align-self: center
+                justify-self: right
+        &__content-h3 
+            font-size: 28px
+            line-height: 28px
+            text-transform: uppercase
+            color: #FFFFFF
+            font-weight: 700
+
+        &__content-p 
+            padding-top: 12px
+            padding-bottom: 14px
+            font-size: 14px
+            line-height: 13px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            max-width: 290px
+
+        &__content-item-one-input-phone
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 16px
+            line-height: 19px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+            padding: 15px 24px
+            background: #008DCD
+            max-width: 280px
+            &::placeholder
+                color: #FFFFFF
+
+        &__content-item-one-label-for-checkbox
+            font-size: 10px
+            line-height: 15px
+            color: #FFFFFF
+            display: flex
+            align-items: center
+            font-weight: 300
+            
+        &__content-item-one-checkbox
+            display: flex
+            margin-left: 8px
+            margin-right: 8px
+
+    .button-type-2 
+        background: #FFCC00
+        border-radius: 30px
+        font-size: 16px
+        line-height: 18px
+        text-transform: uppercase
+        color: #363636
+        padding: 14px 35px 
+        text-align: right
+        font-weight: 700
+        max-width: 280px
+
+    //////////////////////// reviews ////////////////////////
+    .reviews 
+
+        &__content 
+            padding: 51px 21px 40px 21px
+        &__h3
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 8px
+        &__lining
+            display: grid
+            grid-template-columns: 22px auto 22px
+        &__list
+            display: grid
+            grid-template-columns: 280px 280px
+            justify-content: space-around
+        &__box 
+            display: grid
+            grid-gap: 13px
+        &__box-top 
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 13px
+        &__box-top-img
+            width: 100px
+            height: 100px
+            &_1
+                background-image: url(../img/reviews/darya-small-1.jpg)
+            &_2
+                background-image: url(../img/reviews/elena-small-1.jpg)
+
+        &__box-top-text 
+            display: grid
+            grid-gap: 4px
+        &__box-top-h3 
+            font-size: 26px
+            line-height: 19px
+            color: #000000
+            font-weight: 500
+
+        &__box-top-h4 
+            font-size: 18px
+            line-height: 22px
+            display: flex
+            align-items: center
+            color: #000000
+            font-weight: 500
+            padding-bottom: 4px
+        &__box-top-h5 
+            font-size: 10px
+            line-height: 12px
+            color: #000000
+        &__box-bottom 
+
+        &__box-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            min-height: 84px
+        
+    .button-right,
+    .button-left 
+        display: grid
+        align-content: center
+    .button-right_reviews,
+    .button-left_reviews
+        align-content: start
+        padding-top: 70px
+    //////////////////////// reviews ////////////////////////
+
+    .advantages 
+        background: #F7F7F7
+        &__content 
+            padding: 37px 35px
+        &__h3 
+            font-size: 36px
+            line-height: 43px
+            color: #000000
+            font-weight: 700
+        &__list
+            display: grid
+            grid-template-columns: repeat(6,100px)
+            justify-content: space-between
+            
+            padding-top: 12px
+            padding-bottom: 12px
+
+        &__link 
+            width: 100px
+            display: grid
+            justify-content: center
+            grid-template-columns: 100px
+        &__link-img
+            width: 100px
+            height: 100px
+        &__link-p
+            
+            padding-top: 13px
+            display: grid
+            justify-content: center 
+            text-align: center
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+
+    //////////////////////// warranty ////////////////////////
+
+    .warranty 
+
+        &__content 
+            padding: 47px 25px 42px 25px
+        &__h3 
+            font-size: 28px
+            line-height: 34px
+            color: #000000
+            font-weight: 700
+            padding-bottom: 16px
+        &__form 
+            display: grid
+            grid-template-columns: 218px 218px 218px
+            justify-content: space-between
+            
+        &__form-item 
+            display: grid
+            grid-template-columns: 220px
+            grid-gap: 13px
+            &_secondary
+
+        &__form-item-top 
+            display: grid
+            grid-gap: 10px
+        &__form-item-top-img 
+            height: 100px
+        &__form-item-top-h3 
+            white-space: nowrap
+            display: grid
+            align-content: center
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+            font-weight: 700
+        &__form-item-bottom 
+            display: grid
+            grid-gap: 7px
+        &__form-item-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            min-height: 75px
+
+    .button-right_warranty, 
+    .button-left_warranty
+        display: none
+        align-content: start
+        padding-top: 21px
+
+    //////////////////////// doubt //////////////////////// 
+
+    .doubt 
+        background: #D2ECF7
+        &__content 
+            padding: 41px 35px 41px 35px
+        &__h2 
+            font-size: 36px
+            line-height: 43px
+            font-weight: 700
+            color: #000000
+            padding-bottom: 12px
+        &__list 
+            display: grid
+            grid-gap: 10px
+        &__link 
+            display: grid
+            grid-template-columns: 1fr 25px
+            background: #FFFFFF
+            border-radius: 32px
+            padding: 16px 24px
+            color: #000000
+    
+        &__link-p 
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+
+        &__link-img 
+            display: grid
+            justify-self: center
+            align-self: center
+            width: 100%
+
+    //////////////////////// partners ////////////////////////
+
+    .partners
+
+        &__content 
+            padding: 32px 35px 39px 35px
+
+        &__form 
+            display: grid
+            grid-template-columns: 22px auto 22px
+
+        &__form-list
+            display: grid
+            grid-template-columns: 66px 66px 66px 66px 66px 66px 
+            justify-content: space-around
+            grid-template: auto
+
+        &__form-list-link 
+            height: min-content
+            
+    .button-left_partners
+    .button-right_partners
+        padding-bottom: 
+    //////////////////////// footer ////////////////////////
+    .footer 
+        background: #E9E9E9
+        
+        &__content 
+            padding: 33px 34px
+            display: grid
+        &__content-top 
+            
+            display: grid
+            grid-template-columns: 220px auto
+            
+            border-bottom: 1px solid #C4C4C4
+            padding-bottom: 13px
+        &__content-top-h3 
+            padding: 8px 0 11px 0
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+            font-weight: 600
+            align-self: center
+
+        &__content-top-form 
+            display: grid
+            grid-template-columns: 220px 220px
+            justify-content: end
+            grid-column-gap: 20px
+            grid-row-gap: 8px
+         
+
+        &__content-top-form-input-phone
+            border: 1px solid #363636
+            box-sizing: border-box
+            border-radius: 30px
+            font-size: 14px
+            line-height: 17px
+            padding: 14px 23px
+            color: #363636
+            background: #E9E9E9
+            padding-bottom: 
+            &::placeholder
+                color: #363636
+        &__content-top-form-label-for-checkbox
+            display: flex
+            align-items: center
+            font-size: 10px
+            line-height: 12px
+            color: #9E9E9E
+            white-space: nowrap
+        &__content-top-form-checkbox 
+            margin-left: 5px
+            margin-right: 5px
+        &__content-center 
+            padding: 19px 0 30px 0
+            display: grid
+            grid-template-columns: 100px auto
+            border-bottom: 1px solid #C4C4C4
+        &__content-bottom 
+            display: grid
+            grid-template-columns: 200px 300px 25px 100px
+            justify-content: space-between
+            padding: 18px 0
+        &__content-bottom-copyright
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+            
+        &__content-bottom-years
+            width: min-content
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+
+        &__content-bottom-p 
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+
+    .button-type-3
+        display: grid
+        width: 100%
+        max-width: 289px 
+        background: #008DCD
+        border-radius: 30px
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 14px 31px
+        justify-self: center
+        text-align: center
+        font-weight: 700
+    .menu__footer
+        
+    .menu__link_footer
+        display: grid
+        align-content: center
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    .menu__footer-li
+        display: grid
+        height: 100%
+    .logo-footer
+        display: flex
+        width: 99px
+        height: 30px
+        background-size: 100%
+        background-position: center
+        &_black
+            background-image: url(../img/paraphernalia/logo-footer.svg)
+
+    .button-gamburger 
+        width: 40px
+        height: 33px
+        &_black
+            align-self: center 
+            background-image: url(../img/paraphernalia/hamburger-black.svg)
+    .social-box 
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 16px
+        justify-self: center
+        &__link 
+            
+        &__link-img
+            height: 12px
+            width: 12px
+@media (min-width: 1440px) 
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 683px)
