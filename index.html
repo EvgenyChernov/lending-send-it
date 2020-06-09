@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper-id">
         <header class="header">
             <div class="header__content">
                 <div class="header__top-left">
@@ -23,7 +23,52 @@
                         <li class="menu__li"><a href="" class="menu__link">Гарантии</a></li>
                         <li class="menu__li"><a href="" class="menu__link">FAQ</a></li>
                     </ul>
-                    <a href="#" class="button-gamburger button-gamburger_white"></a>
+                    <input type="checkbox" id="switcher">
+                    <label class="label-nav" for="switcher">
+                        <div class="button-gamburger button-gamburger_white"></div>
+                    </label>
+                    <nav class="nav">
+                        <div class="nav__content">
+                            <a href="#" class="logo_nav"></a>
+                            <ul class="nav__menu">
+                                <li><a href="#" class="nav__menu-link">Главная</a></li>
+                                <li><a href="#" class="nav__menu-link">Описание</a></li>
+                                <li><a href="#" class="nav__menu-link">Преимущества</a></li>
+                                <li><a href="#" class="nav__menu-link">Партнёры</a></li>
+                                <li><a href="#" class="nav__menu-link">Гарантии</a></li>
+                                <li><a href="#" class="nav__menu-link">FAQ</a></li>
+                            </ul>
+                            <label class="close" for="switcher">
+                                <div class="button-close"></div>
+                            </label>
+                            <div class="nav__content-bottom">
+                                <h3 class="nav__content-bottom-h3">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                                <div class="nav__content-bottom-form">
+                                    <input type="number" placeholder="Ваш телефон"
+                                        class="nav__content-bottom-form-input-phone" name="footer-phone"
+                                        id="footer-phone">
+                                    <a href="#" class="button-type-3 button-type-3_nav">заказать звонок</a>
+                                    <label for="processing-consent-footer"
+                                        class="nav__content-bottom-form-label-for-checkbox">
+                                        <input class="nav__content-bottom-form-checkbox" type="checkbox" name=""
+                                            id="processing-consent-footer">
+                                        Я согласен на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="nav__social-box">
+                                <a href="#" class="social-box__link social-box__link_nav"><img
+                                        class="social-box__link-img social-box__link-img-nav"
+                                        src="img/paraphernalia/social-vk.svg" alt=""></a>
+                                <a href="#" class="social-box__link social-box__link_nav"><img
+                                        class="social-box__link-img social-box__link-img-nav"
+                                        src="img/paraphernalia/social-istagram.svg" alt=""></a>
+                                <a href="#" class="social-box__link social-box__link_nav"><img
+                                        class="social-box__link-img social-box__link-img-nav"
+                                        src="img/paraphernalia/social-facebook.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="header__center">
                     <h3 class="header__h3">ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ</h3>
@@ -283,6 +328,7 @@
                         </p>
                         <img class="doubt__link-img" src="img/paraphernalia/arrow-botton-blue.svg" alt="">
                     </a>
+                    
                 </div>
             </div>
         </section>
@@ -307,8 +353,7 @@
                         <a href="#" class="partners__form-list-link partners__form-list-link_big"><img
                                 class="partners__form-list-link-img" src="img/partners-big/tnt.png" alt=""></a>
                         <a href="#" class="partners__form-list-link partners__form-list-link_big"><img
-                                class="partners__form-list-link-img"
-                                src="img/partners-big/ups.png" alt=""></a>
+                                class="partners__form-list-link-img" src="img/partners-big/ups.png" alt=""></a>
                     </div>
                     <a href="" class="button-right button-right_partners"><img
                             src="img/paraphernalia/arrow-right-grey.svg" alt=""></a>

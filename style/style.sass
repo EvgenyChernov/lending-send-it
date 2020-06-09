@@ -63,7 +63,18 @@ h1,h2,h3,h4,h5,h6
     display: grid
     grid-template-rows: 100px auto 50px
     min-height: 100vh
-    
+
+.button-type-1
+    &:hover
+        background: #008DCD
+        box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45)
+.button-type-2
+    &:hover
+        background: #FFCC00
+        box-shadow: 0px 4px 20px rgba(255, 204, 0, 0.55)
+.doubt__link
+    &:hover
+        box-shadow: 0px 4px 20px rgba(124, 195, 225, 0.6)
 body
     font-family: 'MyriadPro'
  
@@ -74,6 +85,115 @@ body
     footer 
         padding: 0 calc(50vw - 160px)
 
+    #switcher
+        position: absolute
+        left: -9999999px
+        visibility: hidden
+
+    .nav
+   
+    #switcher:checked ~ .nav 
+        left: 0vw
+
+    .label-nav
+        display: grid
+        height: min-content
+        width: min-content
+
+    .close
+        position: absolute
+        top: 24px
+        right: 25px
+
+    .button-close
+        display: flex
+        width: 30px
+        height: 31px
+        background-size: 100%
+        background-repeat: no-repeat
+        background-image: url(../img/paraphernalia/close-icon.svg)
+
+    .nav
+        position: fixed
+        min-width: 100vw
+        height: auto
+        background: #FFFFFF
+        top: 0
+        left: 100vw
+        z-index: 2
+        transition: all .4s
+        display: grid
+        
+        &__content
+            grid-template-columns: auto
+
+            min-height: max-content
+            background: #FFFFFF
+            transition: all .4s
+            display: grid
+            grid-template-rows: 48px  auto auto
+        &__menu
+            padding-top: 28px
+            padding-bottom: 16px
+            display: grid
+            grid-gap: 16px
+
+        &__menu-link
+            padding-left: 23px
+            font-size: 18px
+            line-height: 22px
+            display: flex
+            align-items: center
+            color: #000000
+            display: block
+            width: 100vw
+            transition: all .2s
+            &:hover
+                background-color: rgba(152, 195, 232, 0)
+
+        &__content-bottom 
+            display: grid
+            grid-gap: 5px
+        &__content-bottom-h3 
+            padding-left: 21px
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+            font-weight: 700
+        &__content-bottom-form 
+            display: grid
+            grid-gap: 10px
+            justify-content: start
+        &__content-bottom-form-input-phone 
+            justify-self: center
+            border: 1px solid #363636
+            box-sizing: border-box
+            border-radius: 30px
+            padding: 14px 32px
+            width: 100%
+            max-width: 279px 
+        &__content-bottom-form-label-for-checkbox 
+            font-size: 10px
+            line-height: 12px
+            color: #9E9E9E
+            width: 300px
+            
+        &__content-bottom-form-checkbox 
+            margin-left: 10px
+            margin-right: 10px
+        &__social-box
+            padding-top: 23px
+            display: grid
+            grid-template-columns: 57px 36px 57px
+            justify-content: space-between
+            
+    .social-box__link_nav 
+        &:first-child
+            justify-self: end
+    .social-box__link-img-nav    
+        height: 36px
+        width: 36px
+        
     .header 
         display: flex
         background-image: url(../img/background/background-mine-big.jpg)
@@ -102,11 +222,18 @@ body
         height: 28px
         background-size: 100%
         background-repeat: no-repeat
-        &__header
-
         &_white
             background-image: url(../img/paraphernalia/logo-header.svg)
-            
+        &_nav
+            margin-top: 13px
+            margin-left: 23px
+            display: flex
+            width: 160px
+            height: 48px
+            background-size: 100%
+            background-repeat: no-repeat
+            background-image: url(../img/paraphernalia/logo-nav.png)
+
     .menu 
         display: none
 
@@ -572,6 +699,8 @@ body
         justify-self: center
         text-align: center
         font-weight: 700
+        &_nav
+            width: 279px
 
     .logo-footer
         display: flex
@@ -597,7 +726,13 @@ body
     header,
     footer 
         padding: 0 calc(50vw - 384px)
+    #switcher
+        position: absolute
+        left: -9999999px
+        visibility: hidden
 
+    .nav
+        display: none
     .header 
         display: flex
         background-image: url(../img/background/background-mine-big.jpg)
@@ -1213,6 +1348,13 @@ body
     header,
     footer 
         padding: 0 calc(50vw - 720px)
+    #switcher
+        position: absolute
+        left: -9999999px
+        visibility: hidden
+
+    .nav
+        display: none
     .header 
         display: flex
         background-image: url(../img/background/background-mine-big.jpg)
