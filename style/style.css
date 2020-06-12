@@ -179,20 +179,19 @@ body {
     transition: all .4s;
     display: -ms-grid;
     display: grid;
+    min-height: 100vh;
   }
   .nav__content {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    min-height: -webkit-max-content;
-    min-height: -moz-max-content;
-    min-height: max-content;
     background: #FFFFFF;
     -webkit-transition: all .4s;
     transition: all .4s;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 48px  auto auto;
-        grid-template-rows: 48px  auto auto;
+    -ms-grid-rows: 48px  auto auto 75px;
+        grid-template-rows: 48px  auto auto 75px;
+    height: 100%;
   }
   .nav__menu {
     padding-top: 28px;
@@ -224,6 +223,9 @@ body {
     display: -ms-grid;
     display: grid;
     grid-gap: 5px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
   .nav__content-bottom-h3 {
     padding-left: 21px;
@@ -231,14 +233,19 @@ body {
     line-height: 22px;
     color: #000000;
     font-weight: 700;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
   .nav__content-bottom-form {
     display: -ms-grid;
     display: grid;
     grid-gap: 10px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-row-align: start;
+        align-self: start;
   }
   .nav__content-bottom-form-input-phone {
     -ms-grid-column-align: center;
@@ -250,6 +257,9 @@ body {
     padding: 14px 32px;
     width: 100%;
     max-width: 279px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
   .nav__content-bottom-form-label-for-checkbox {
     font-size: 10px;
@@ -804,12 +814,18 @@ body {
     -ms-grid-columns: 66px 66px 66px;
         grid-template-columns: 66px 66px 66px;
     grid-gap: 0 7%;
-    grid-template: auto;
   }
   .partners__form-list-link {
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
+  }
+  .partners__form-list-link_big {
+    display: none;
+  }
+  .partners__form-list-link-img {
+    width: 66px;
+    height: 41px;
   }
   .footer {
     background: #E9E9E9;
@@ -928,6 +944,9 @@ body {
   }
   .button-type-3_nav {
     width: 279px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
   .logo-footer {
     display: -webkit-box;
@@ -1026,8 +1045,8 @@ body {
     padding-left: 20px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[6];
-        grid-template-columns: repeat(6, auto);
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1406,8 +1425,8 @@ body {
   .advantages__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (100px)[6];
-        grid-template-columns: repeat(6, 100px);
+    -ms-grid-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1561,7 +1580,6 @@ body {
         grid-template-columns: 66px 66px 66px 66px 66px 66px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    grid-template: auto;
   }
   .partners__form-list-link {
     height: -webkit-min-content;
@@ -1830,8 +1848,8 @@ body {
     padding-left: 140px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[6];
-        grid-template-columns: repeat(6, auto);
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2230,8 +2248,8 @@ body {
   .advantages__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (160px)[6];
-        grid-template-columns: repeat(6, 160px);
+    -ms-grid-columns: 160px 160px 160px 160px 160px 160px;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2421,7 +2439,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    grid-template: auto;
   }
   .partners__form-list-link {
     width: -webkit-min-content;

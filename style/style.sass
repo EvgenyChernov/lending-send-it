@@ -123,15 +123,16 @@ body
         z-index: 2
         transition: all .4s
         display: grid
-        
+        min-height: 100vh
         &__content
             grid-template-columns: auto
 
-            min-height: max-content
+            
             background: #FFFFFF
             transition: all .4s
             display: grid
-            grid-template-rows: 48px  auto auto
+            grid-template-rows: 48px  auto auto 75px
+            height: 100%
         &__menu
             padding-top: 28px
             padding-bottom: 16px
@@ -154,16 +155,19 @@ body
         &__content-bottom 
             display: grid
             grid-gap: 5px
+            height: min-content
         &__content-bottom-h3 
             padding-left: 21px
             font-size: 18px
             line-height: 22px
             color: #000000
             font-weight: 700
+            height: min-content
         &__content-bottom-form 
             display: grid
             grid-gap: 10px
-            justify-content: start
+            justify-content: center
+            align-self: start
         &__content-bottom-form-input-phone 
             justify-self: center
             border: 1px solid #363636
@@ -172,6 +176,7 @@ body
             padding: 14px 32px
             width: 100%
             max-width: 279px 
+            height: min-content
         &__content-bottom-form-label-for-checkbox 
             font-size: 10px
             line-height: 12px
@@ -610,9 +615,14 @@ body
             display: grid
             grid-template-columns: 66px 66px 66px
             grid-gap: 0 7%
-            grid-template: auto
+            
         &__form-list-link 
             height: min-content
+            &_big
+                display: none
+        &__form-list-link-img
+            width: 66px
+            height: 41px
             
     .button-left_partners
     .button-right_partners
@@ -701,6 +711,7 @@ body
         font-weight: 700
         &_nav
             width: 279px
+            height: min-content
 
     .logo-footer
         display: flex
@@ -781,7 +792,7 @@ body
     .menu
         padding-left: 20px
         display: grid
-        grid-template-columns: repeat(6, auto)
+        grid-template-columns: auto auto auto auto auto auto
         justify-content: space-between
         &__li  
             display: grid
@@ -1076,7 +1087,7 @@ body
             font-weight: 700
         &__list
             display: grid
-            grid-template-columns: repeat(6,100px)
+            grid-template-columns: 100px 100px 100px 100px 100px 100px
             justify-content: space-between
             
             padding-top: 12px
@@ -1200,7 +1211,6 @@ body
             display: grid
             grid-template-columns: 66px 66px 66px 66px 66px 66px 
             justify-content: space-around
-            grid-template: auto
 
         &__form-list-link 
             height: min-content
@@ -1405,7 +1415,7 @@ body
     .menu
         padding-left: 140px
         display: grid
-        grid-template-columns: repeat(6, auto)
+        grid-template-columns: auto auto auto auto auto auto
         justify-content: space-between
         &__li  
             display: grid
@@ -1709,7 +1719,7 @@ body
             font-weight: 700
         &__list
             display: grid
-            grid-template-columns: repeat(6,160px)
+            grid-template-columns: 160px 160px 160px 160px 160px 160px
             justify-content: space-between
             
             padding-top: 24px
@@ -1849,7 +1859,6 @@ body
             display: grid
             grid-template-columns: 94px 94px 94px 94px 94px 94px 94px 94px 
             justify-content: space-between
-            grid-template: auto
 
         &__form-list-link 
             width: min-content
